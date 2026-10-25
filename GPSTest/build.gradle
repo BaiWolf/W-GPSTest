@@ -12,8 +12,8 @@ android {
         targetSdkVersion 36
         multiDexEnabled true
         // versionCode scheme - first two digits are minSdkVersion, last three digits are build number
-        versionCode 24101
-        versionName "3.10.6-w.1"
+        versionCode 24102
+        versionName "3.10.6-w.2"
 
         vectorDrawables.useSupportLibrary = true
 
@@ -52,11 +52,13 @@ android {
     }
 
 
-    if (project.hasProperty("secure.properties")
-            && new File(project.property("secure.properties")).exists()) {
+    def releaseSigningFile = project.hasProperty("secure.properties")
+            ? file(project.property("secure.properties"))
+            : rootProject.file('.signing/release.properties')
+    if (releaseSigningFile.isFile()) {
 
         Properties props = new Properties()
-        props.load(new FileInputStream(file(project.property("secure.properties"))))
+        releaseSigningFile.withInputStream { props.load(it) }
 
         signingConfigs {
             debug {

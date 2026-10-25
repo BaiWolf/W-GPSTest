@@ -20,9 +20,13 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 
 import com.android.gpstest.Application;
 import com.android.gpstest.BuildConfig;
@@ -35,9 +39,29 @@ public class HelpActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        boolean darkTheme = Application.Companion.getPrefs().getBoolean(
+                getString(R.string.pref_key_dark_theme), false);
+        setTheme(darkTheme ? R.style.AppTheme_Dark_NoActionBar : R.style.AppTheme_NoActionBar);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help);
+        setSupportActionBar(findViewById(R.id.help_toolbar));
+        setTitle(R.string.pref_about_category_title);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        // Keep the toolbar and scrolling content inside the system bars and display cutouts.
+        View content = findViewById(R.id.activity_help);
+        int left = content.getPaddingLeft();
+        int top = content.getPaddingTop();
+        int right = content.getPaddingRight();
+        int bottom = content.getPaddingBottom();
+        ViewCompat.setOnApplyWindowInsetsListener(content, (view, windowInsets) -> {
+            Insets bars = windowInsets.getInsets(
+                    WindowInsetsCompat.Type.systemBars() | WindowInsetsCompat.Type.displayCutout());
+            view.setPadding(left + bars.left, top + bars.top,
+                    right + bars.right, bottom + bars.bottom);
+            return windowInsets;
+        });
+        ViewCompat.requestApplyInsets(content);
 
         TextView versionView = (TextView) findViewById(R.id.app_version);
         TextView helpView = (TextView) findViewById(R.id.help_text);

@@ -15,7 +15,9 @@ Application IDs: `com.baiwolf.wgpstest` (Google Maps) and `com.baiwolf.wgpstest.
 
 The verified toolchain uses Android Gradle Plugin 9.4.1, Gradle 9.6.0, Kotlin 2.2.10, Hilt 2.57.2, and Android SDK 36. Gradle daemon JVM criteria select JetBrains JDK 21 through the Foojay resolver. The Google Debug build was compiled, installed over wireless debugging, and checked on a Pixel 11 (Android API 37), including Overview and Dashboard. Nine focused satellite-count, receiver-state, and motion-statistics regression tests passed with Kotlin 2.2.10.
 
-The previous AGP 8.13.2 / Gradle 8.14.5 baseline is preserved in commit `3a70020e3083d5e072629ddfe736dc25c47b1298`. This upgrade retains the legacy Kotlin plugins and AGP DSL through the Upgrade Assistant compatibility flags in `gradle.properties`; these must be migrated before adopting AGP 10. The obsolete library ProGuard default was replaced with the supported optimizing template. OSM, Wear OS, and release builds have not been verified as part of this migration.
+The previous AGP 8.13.2 / Gradle 8.14.5 baseline is preserved in commit `3a70020e3083d5e072629ddfe736dc25c47b1298`. This upgrade retains the legacy Kotlin plugins and AGP DSL through the Upgrade Assistant compatibility flags in `gradle.properties`; these must be migrated before adopting AGP 10. The obsolete library ProGuard default was replaced with the supported optimizing template. OSM and Wear OS builds have not been verified as part of this migration.
+
+The `3.10.6-w.2` Google Release APK and AAB were built and their signatures verified. The APK was checked for alignment and non-debuggable status, installed on a Pixel 11, and verified on-device. Dashboard speed and course headings now align; the course hint, GitHub drawer entry, and feedback drawer entry were removed. Help content stays in English, and About uses an inset-aware toolbar above scrolling content so its first lines remain visible.
 
 Open the project in Android Studio and select the Google Debug variant. From a configured command line:
 
@@ -24,6 +26,8 @@ Open the project in Android Studio and select the Google Debug variant. From a c
 ```
 
 The upstream map-provider setup and any API-key configuration still apply. For a custom Google Maps API key, authorize the W-GPSTest application ID and signing certificate.
+
+Release builds read local signing settings from `.signing/release.properties` by default, or from the file specified by `-Psecure.properties=<path>`. The properties are `key.store` (relative to `GPSTest/`, or an absolute path), `key.alias`, `key.storepassword`, and `key.keypassword`. Keep the keystore and passwords backed up outside this checkout; `.signing/` is ignored by Git. Build the signed Google Maps APK with `./gradlew :GPSTest:assembleGoogleRelease`, or its Android App Bundle with `./gradlew :GPSTest:bundleGoogleRelease`. Use the same signing key for subsequent APK updates.
 
 ## App icon
 

@@ -439,7 +439,7 @@ private fun Dashboard(status: ReceiverStatus, fresh: Boolean, location: Location
 private fun SpeedAndCourse(speed: Double?, factor: Double, unit: String, bearing: Double?, roomy: Boolean) {
     Panel(padding = if (roomy) 16.dp else 12.dp) {
         Row(horizontalArrangement = Arrangement.spacedBy(if (roomy) 16.dp else 12.dp),
-            verticalAlignment = Alignment.CenterVertically) {
+            verticalAlignment = Alignment.Top) {
             Column(Modifier.weight(1.2f), horizontalAlignment = Alignment.CenterHorizontally) {
                 Text(stringResource(R.string.w_speed), style = MaterialTheme.typography.subtitle1)
                 Box(Modifier.fillMaxWidth().height(if (roomy) 176.dp else 128.dp), contentAlignment = Alignment.Center) {
@@ -459,12 +459,10 @@ private fun SpeedAndCourse(speed: Double?, factor: Double, unit: String, bearing
                 }
             }
             Column(Modifier.weight(1f), horizontalAlignment = Alignment.CenterHorizontally) {
-                Text(stringResource(R.string.w_course), style = MaterialTheme.typography.caption, textAlign = TextAlign.Center)
+                Text(stringResource(R.string.w_course), style = MaterialTheme.typography.subtitle1, textAlign = TextAlign.Center)
                 Compass(bearing, Modifier.width(if (roomy) 76.dp else 60.dp))
                 Text(if (bearing == null) "—" else number(bearing, 0) + "°",
                     fontSize = if (roomy) 30.sp else 25.sp, color = MaterialTheme.colors.primary)
-                Text(stringResource(R.string.w_course_hint), fontSize = if (roomy) 11.sp else 10.sp, lineHeight = if (roomy) 15.sp else 13.sp,
-                    textAlign = TextAlign.Center)
             }
         }
         Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {

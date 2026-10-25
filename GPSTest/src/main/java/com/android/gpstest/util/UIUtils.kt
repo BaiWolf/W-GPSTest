@@ -213,12 +213,13 @@ internal object UIUtils {
     }
 
     fun createWhatsNewDialog(activity: Activity): Dialog {
-        val textView = activity.layoutInflater.inflate(R.layout.whats_new_dialog, null) as TextView
-        textView.setText(R.string.main_help_whatsnew)
+        val contentView = activity.layoutInflater.inflate(R.layout.whats_new_dialog, null)
+        val textView = contentView.findViewById<TextView>(R.id.whats_new_text)
+        textView.setText(R.string.w_whats_new)
         val builder = AlertDialog.Builder(activity)
         builder.setTitle(R.string.main_help_whatsnew_title)
         builder.setIcon(R.mipmap.ic_launcher)
-        builder.setView(textView)
+        builder.setView(contentView)
         builder.setNeutralButton(
             R.string.main_help_close
         ) { _: DialogInterface?, _: Int -> activity.dismissDialog(LibUIUtils.WHATSNEW_DIALOG) }

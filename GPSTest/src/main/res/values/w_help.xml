@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="w_whats_new"><b>W-GPSTest</b>\n\n
+        • Overview: per-satellite signal strength, frequency bands, fix participation, and constellation filters with used/in-view counts.\n\n
+        • Dashboard: ground speed, session average and maximum speed, course, altitude, accuracy, time, and coordinates. Units follow Settings; session speed statistics can be reset.\n\n
+        • Interface: aligned the speed and course headings on the Dashboard. Removed the direction hint below the course reading and the GitHub and feedback drawer entries.\n\n
+        • Help: updated the release notes and About page with W-GPSTest information. Fixed the top of the About text being hidden behind the app bar on newer Android versions.
+    </string>
+    <string name="w_about_text"><b>W-GPSTest</b>\n\n
+        An Android GNSS tool for viewing satellite signals, positioning status, and motion data.\n\n
+        <b>Overview and Dashboard</b>\n
+        Overview groups signals by satellite and shows constellation counts and filters. Dashboard shows speed, session statistics, course, altitude, accuracy, time, and coordinates.\n\n
+        <b>GNSS tools</b>\n
+        Includes Status, Map, Sky, Accuracy, assistance data tools, and logging. Available data depends on the device and reception conditions.\n\n
+        <b>Credits and license</b>\n
+        Based on GPSTest by Sean J. Barbeau and contributors. W-GPSTest retains the upstream copyright notices and Apache License 2.0. W-GPSTest additions do not imply endorsement by the upstream authors.
+    </string>
+    <string name="w_reference_title">GNSS reference</string>
+</resources>
