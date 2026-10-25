@@ -13,7 +13,9 @@ Application IDs: `com.baiwolf.wgpstest` (Google Maps) and `com.baiwolf.wgpstest.
 
 ## Build and verify
 
-Use Android Studio with JDK 17 or newer and Android SDK 36, then select the Google Debug variant. From a configured command line:
+The verified build baseline uses Android Gradle Plugin 8.13.2, Gradle 8.14.5, Kotlin 2.1.0, Hilt 2.56.2, and Android SDK 36. Gradle daemon JVM criteria select JetBrains JDK 21 through the Foojay resolver. The Google Debug build was compiled, installed over wireless debugging, and checked on a Pixel 11 (Android API 37), including Overview and Dashboard.
+
+Open the project in Android Studio and select the Google Debug variant. From a configured command line:
 
 ```shell
 ./gradlew :GPSTest:assembleGoogleDebug :GPSTest:testGoogleDebugUnitTest
