@@ -13,7 +13,9 @@ Application IDs: `com.baiwolf.wgpstest` (Google Maps) and `com.baiwolf.wgpstest.
 
 ## Build and verify
 
-The verified build baseline uses Android Gradle Plugin 8.13.2, Gradle 8.14.5, Kotlin 2.1.0, Hilt 2.56.2, and Android SDK 36. Gradle daemon JVM criteria select JetBrains JDK 21 through the Foojay resolver. The Google Debug build was compiled, installed over wireless debugging, and checked on a Pixel 11 (Android API 37), including Overview and Dashboard.
+The verified toolchain uses Android Gradle Plugin 9.4.1, Gradle 9.6.0, Kotlin 2.2.10, Hilt 2.57.2, and Android SDK 36. Gradle daemon JVM criteria select JetBrains JDK 21 through the Foojay resolver. The Google Debug build was compiled, installed over wireless debugging, and checked on a Pixel 11 (Android API 37), including Overview and Dashboard. Nine focused satellite-count, receiver-state, and motion-statistics regression tests passed with Kotlin 2.2.10.
+
+The previous AGP 8.13.2 / Gradle 8.14.5 baseline is preserved in commit `3a70020e3083d5e072629ddfe736dc25c47b1298`. This upgrade retains the legacy Kotlin plugins and AGP DSL through the Upgrade Assistant compatibility flags in `gradle.properties`; these must be migrated before adopting AGP 10. The obsolete library ProGuard default was replaced with the supported optimizing template. OSM, Wear OS, and release builds have not been verified as part of this migration.
 
 Open the project in Android Studio and select the Google Debug variant. From a configured command line:
 
