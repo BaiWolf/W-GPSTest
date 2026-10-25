@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="w_satellites_title">Übersicht</string>
+    <string name="w_dashboard_title">Instrumente</string>
+    <string name="w_receiver_off">GNSS ist aus · Schalter oben einschalten</string>
+    <string name="w_fix_acquired">Position ermittelt</string>
+    <string name="w_position_only">Position aktualisiert · Satellitenbestätigung ausstehend</string>
+    <string name="w_waiting">Warten auf eine aktuelle Position</string>
+    <string name="w_used">Verwendet</string>
+    <string name="w_visible">Sichtbar</string>
+    <string name="w_best_cn0">Bestes C/N₀</string>
+    <string name="w_all">Alle</string>
+    <string name="w_satellite">Satellit</string>
+    <string name="w_used_short">Fix</string>
+    <string name="w_azimuth">Az.</string>
+    <string name="w_elevation">El.</string>
+    <string name="w_no_satellites">Warten auf Satellitensignale</string>
+    <string name="w_no_filtered_satellites">Keine Satelliten in dieser Konstellation</string>
+    <string name="w_satellite_hint">GNSS eingeschaltet lassen und ans Fenster oder ins Freie gehen. Summen umfassen alle Konstellationen; Filter gelten für die Satellitenliste.</string>
+    <string name="w_used_in_fix">Zur Positionsbestimmung verwendet</string>
+    <string name="w_not_used">Nicht zur Positionsbestimmung verwendet</string>
+    <string name="w_signal_note">Eine Zeile pro Satellit. Der Balken zeigt das stärkste Signal auf einer Skala von 0–60 dB-Hz. Die Frequenzbänder stehen unter der Satellitennummer.</string>
+    <string name="w_speed">Geschwindigkeit</string>
+    <string name="w_gnss_speed">GNSS-Geschwindigkeit über Grund</string>
+    <string name="w_units_settings">Einheiten laut Einstellungen</string>
+    <string name="w_average">Mittlere Geschwindigkeit</string>
+    <string name="w_maximum">Höchstgeschwindigkeit</string>
+    <string name="w_course">Bewegungsrichtung</string>
+    <string name="w_course_hint">Bewegungsrichtung, nicht die Ausrichtung des Telefons</string>
+    <string name="w_altitude_msl">Höhe · Meeresspiegel</string>
+    <string name="w_altitude_wgs84">Höhe · WGS84-Ellipsoid</string>
+    <string name="w_accuracy">Horizontale Genauigkeit</string>
+    <string name="w_local_clock">Ortszeit des Geräts</string>
+    <string name="w_fix_utc">Zeit der Positionsbestimmung · UTC</string>
+    <string name="w_session_note">Geschwindigkeitsstatistik dieser Sitzung. Pausen und fehlende Messwerte werden nicht berücksichtigt.</string>
+    <string name="w_reset_stats">Zurücksetzen</string>
+</resources>

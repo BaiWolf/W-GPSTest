@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="w_satellites_title">Přehled</string>
+    <string name="w_dashboard_title">Přístrojový panel</string>
+    <string name="w_receiver_off">GNSS je vypnuté · zapněte horní přepínač</string>
+    <string name="w_fix_acquired">Poloha určena</string>
+    <string name="w_position_only">Poloha aktualizována · čekání na potvrzení družic</string>
+    <string name="w_waiting">Čekání na aktuální polohu</string>
+    <string name="w_used">Použité</string>
+    <string name="w_visible">Viditelné</string>
+    <string name="w_best_cn0">Nejlepší C/N₀</string>
+    <string name="w_all">Vše</string>
+    <string name="w_satellite">Družice</string>
+    <string name="w_used_short">Fix</string>
+    <string name="w_azimuth">Az.</string>
+    <string name="w_elevation">El.</string>
+    <string name="w_no_satellites">Čekání na signály družic</string>
+    <string name="w_no_filtered_satellites">V této konstelaci nejsou žádné družice</string>
+    <string name="w_satellite_hint">Nechte GNSS zapnuté poblíž okna nebo venku. Součty zahrnují všechny konstelace; filtry platí pro seznam družic.</string>
+    <string name="w_used_in_fix">Použita k určení polohy</string>
+    <string name="w_not_used">Nepoužita k určení polohy</string>
+    <string name="w_signal_note">Každá družice má jeden řádek. Sloupec ukazuje nejsilnější signál na stupnici 0–60 dB-Hz. Pásma jsou uvedena pod číslem družice.</string>
+    <string name="w_speed">Rychlost</string>
+    <string name="w_gnss_speed">Rychlost vůči zemi z GNSS</string>
+    <string name="w_units_settings">Jednotky podle nastavení</string>
+    <string name="w_average">Průměrná rychlost</string>
+    <string name="w_maximum">Nejvyšší rychlost</string>
+    <string name="w_course">Směr pohybu</string>
+    <string name="w_course_hint">Směr pohybu, nikoli natočení telefonu</string>
+    <string name="w_altitude_msl">Nadmořská výška</string>
+    <string name="w_altitude_wgs84">Výška · elipsoid WGS84</string>
+    <string name="w_accuracy">Vodorovná přesnost</string>
+    <string name="w_local_clock">Místní čas zařízení</string>
+    <string name="w_fix_utc">Čas určení polohy · UTC</string>
+    <string name="w_session_note">Statistiky rychlosti platí pro tuto relaci. Pauzy a chybějící údaje se nezapočítávají.</string>
+    <string name="w_reset_stats">Vynulovat</string>
+</resources>

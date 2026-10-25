@@ -1,3 +1,36 @@
+# W-GPSTest
+
+W-GPSTest is an Android GNSS tool based on [GPSTest by Sean Barbeau and contributors](https://github.com/barbeau/gpstest).
+
+The original Status, Map, Sky, Accuracy, and diagnostic tools remain available. Overview and Dashboard appear first in the drawer, followed by the original destinations in their existing order. Both additions use the same GNSS data and Material theme:
+
+- **Overview**: one row per satellite with the existing constellation flag and numeric satellite ID, strongest-signal C/N0 bars, frequency bands, fix participation, azimuth, elevation, and constellation filters. The total counts are followed by flag-marked used/in-view counts for each of the six main GNSS systems; reported SBAS operators are listed separately. Each satellite is counted once across its frequency bands, and the system counts reconcile with the totals. Summary totals use all reported constellations; filters only affect the satellite list. A fresh coordinate without any satellite marked as used shows an amber awaiting-confirmation status rather than a green confirmed fix.
+- **Dashboard**: GNSS speed, time-weighted average and maximum speed, course over ground, mean-sea-level altitude when available (otherwise explicitly labeled WGS84 ellipsoid height), horizontal accuracy, local clock, UTC fix timestamp, and coordinates.
+
+All 19 languages offered by the original language selector are covered by the new menus and pages. Persian uses right-to-left layout in the new pages. The compact Dashboard places speed and course side by side and keeps scrolling available for larger fonts or longer translations. Speed and distance units follow Settings. Live values expire after 15 seconds without a fresh position. Session speed statistics exclude pauses and gaps longer than 15 seconds and can be reset separately.
+
+Application IDs: `com.baiwolf.wgpstest` (Google Maps) and `com.baiwolf.wgpstest.osmdroid` (OSM). These install alongside the upstream app. The namespace remains `com.android.gpstest` to preserve the existing implementation.
+
+## Build and verify
+
+Use Android Studio with JDK 17 or newer and Android SDK 36, then select the Google Debug variant. From a configured command line:
+
+```shell
+./gradlew :GPSTest:assembleGoogleDebug :GPSTest:testGoogleDebugUnitTest
+```
+
+The upstream map-provider setup and any API-key configuration still apply. For a custom Google Maps API key, authorize the W-GPSTest application ID and signing certificate.
+
+## App icon
+
+The app uses a white W, blue orbit, and satellite sphere with restrained shading on a dark indigo gradient. Generated artwork is stored in `icons/w-gpstest-launcher-foreground.png`. Adaptive color and monochrome layers use the same silhouette within the central safe circle; round and legacy icons are included. Regenerate the packaged resources with `java tools/GenerateLauncherAssets.java` using JDK 17 or newer. The assets are separate from the upstream GPSTest artwork.
+
+## Attribution and license
+
+This project retains the upstream Apache 2.0 license and copyright notices. W-GPSTest additions do not imply endorsement by the upstream authors. The original project documentation follows below.
+
+---
+
 # <img src="/icons/ic_launcher-playstore.png" width="50"/> GPSTest 
 [![Build Status](https://github.com/barbeau/gpstest/actions/workflows/android.yml/badge.svg)](https://github.com/barbeau/gpstest/actions/workflows/android.yml) 
 [![GitHub issues](https://img.shields.io/github/issues/barbeau/gpstest?color=red)](https://github.com/barbeau/gpstest/issues)

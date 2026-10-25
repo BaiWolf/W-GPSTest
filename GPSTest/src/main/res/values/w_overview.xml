@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="w_satellites_title">Overview</string>
+    <string name="w_dashboard_title">Dashboard</string>
+    <string name="w_receiver_off">GNSS is off · use the top switch</string>
+    <string name="w_fix_acquired">Position acquired</string>
+    <string name="w_position_only">Position updated · awaiting satellite confirmation</string>
+    <string name="w_waiting">Waiting for a fresh position</string>
+    <string name="w_used">Used in fix</string>
+    <string name="w_visible">In view</string>
+    <string name="w_best_cn0">Best C/N₀</string>
+    <string name="w_all">All</string>
+    <string name="w_satellite">Satellite</string>
+    <string name="w_used_short">Fix</string>
+    <string name="w_azimuth">Az.</string>
+    <string name="w_elevation">El.</string>
+    <string name="w_no_satellites">Waiting for satellite signals</string>
+    <string name="w_no_filtered_satellites">No satellites in this constellation</string>
+    <string name="w_satellite_hint">Keep GNSS on near a window or outdoors. Totals include all constellations; filters apply to the satellite list.</string>
+    <string name="w_used_in_fix">Used in position fix</string>
+    <string name="w_not_used">Not used in position fix</string>
+    <string name="w_signal_note">One row per satellite. The bar shows its strongest signal, on a 0–60 dB-Hz scale. Signal bands are listed below the satellite ID.</string>
+    <string name="w_speed">Speed</string>
+    <string name="w_gnss_speed">GNSS ground speed</string>
+    <string name="w_units_settings">Units follow Settings</string>
+    <string name="w_average">Average speed</string>
+    <string name="w_maximum">Maximum speed</string>
+    <string name="w_course">Course over ground</string>
+    <string name="w_course_hint">Direction of travel, not phone orientation</string>
+    <string name="w_altitude_msl">Altitude · mean sea level</string>
+    <string name="w_altitude_wgs84">Height · WGS84 ellipsoid</string>
+    <string name="w_accuracy">Horizontal accuracy</string>
+    <string name="w_local_clock">Device local time</string>
+    <string name="w_fix_utc">Position timestamp · UTC</string>
+    <string name="w_session_note">Speed statistics cover this session. Pauses and missing readings are excluded.</string>
+    <string name="w_reset_stats">Reset</string>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="w_satellites_title">Overzicht</string>
+    <string name="w_dashboard_title">Dashboard</string>
+    <string name="w_receiver_off">GNSS staat uit · gebruik de schakelaar bovenaan</string>
+    <string name="w_fix_acquired">Positie bepaald</string>
+    <string name="w_position_only">Positie bijgewerkt · wacht op satellietbevestiging</string>
+    <string name="w_waiting">Wachten op een actuele positie</string>
+    <string name="w_used">Gebruikt</string>
+    <string name="w_visible">Zichtbaar</string>
+    <string name="w_best_cn0">Beste C/N₀</string>
+    <string name="w_all">Alle</string>
+    <string name="w_satellite">Satelliet</string>
+    <string name="w_used_short">Fix</string>
+    <string name="w_azimuth">Az.</string>
+    <string name="w_elevation">El.</string>
+    <string name="w_no_satellites">Wachten op satellietsignalen</string>
+    <string name="w_no_filtered_satellites">Geen satellieten in deze constellatie</string>
+    <string name="w_satellite_hint">Houd GNSS aan bij een raam of buiten. Totalen omvatten alle constellaties; filters gelden voor de satellietlijst.</string>
+    <string name="w_used_in_fix">Gebruikt voor positiebepaling</string>
+    <string name="w_not_used">Niet gebruikt voor positiebepaling</string>
+    <string name="w_signal_note">Eén rij per satelliet. De balk toont het sterkste signaal op een schaal van 0–60 dB-Hz. De frequentiebanden staan onder het satellietnummer.</string>
+    <string name="w_speed">Snelheid</string>
+    <string name="w_gnss_speed">GNSS-grondsnelheid</string>
+    <string name="w_units_settings">Eenheden volgens instellingen</string>
+    <string name="w_average">Gemiddelde snelheid</string>
+    <string name="w_maximum">Maximumsnelheid</string>
+    <string name="w_course">Bewegingsrichting</string>
+    <string name="w_course_hint">Bewegingsrichting, niet de oriëntatie van de telefoon</string>
+    <string name="w_altitude_msl">Hoogte · zeeniveau</string>
+    <string name="w_altitude_wgs84">Hoogte · WGS84-ellipsoïde</string>
+    <string name="w_accuracy">Horizontale nauwkeurigheid</string>
+    <string name="w_local_clock">Lokale tijd van apparaat</string>
+    <string name="w_fix_utc">Tijdstip positiebepaling · UTC</string>
+    <string name="w_session_note">Snelheidsstatistieken gelden voor deze sessie. Pauzes en ontbrekende metingen tellen niet mee.</string>
+    <string name="w_reset_stats">Resetten</string>
+</resources>

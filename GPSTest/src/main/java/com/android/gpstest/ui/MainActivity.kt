@@ -70,6 +70,8 @@ import com.android.gpstest.library.util.PreferenceUtil.runInBackground
 import com.android.gpstest.library.util.PreferenceUtils.isTrackingStarted
 import com.android.gpstest.map.MapConstants
 import com.android.gpstest.ui.NavigationDrawerFragment.NavigationDrawerCallbacks
+import com.android.gpstest.ui.overview.OverviewFragment
+import com.android.gpstest.ui.overview.MotionViewModel
 import com.android.gpstest.ui.sky.SkyFragment
 import com.android.gpstest.ui.status.StatusFragment
 import com.android.gpstest.util.BuildUtils
@@ -106,6 +108,7 @@ class MainActivity : AppCompatActivity(), NavigationDrawerCallbacks {
     private var mapFragment: MapFragment? = null
     private var skyFragment: SkyFragment? = null
     private var accuracyFragment: MapFragment? = null
+    private val motionViewModel: MotionViewModel by viewModels()
 
     // Main signal view model
     @OptIn(ExperimentalCoroutinesApi::class)
@@ -460,6 +463,11 @@ class MainActivity : AppCompatActivity(), NavigationDrawerCallbacks {
                 showAccuracyFragment()
                 currentNavDrawerPosition = item
             }
+            NavigationDrawerFragment.NAVDRAWER_ITEM_SATELLITES,
+            NavigationDrawerFragment.NAVDRAWER_ITEM_DASHBOARD -> if (currentNavDrawerPosition != item) {
+                showOverviewFragment(item == NavigationDrawerFragment.NAVDRAWER_ITEM_DASHBOARD)
+                currentNavDrawerPosition = item
+            }
             NavigationDrawerFragment.NAVDRAWER_ITEM_INJECT_PSDS_DATA -> forcePsdsInjection()
             NavigationDrawerFragment.NAVDRAWER_ITEM_INJECT_TIME_DATA -> forceTimeInjection()
             NavigationDrawerFragment.NAVDRAWER_ITEM_CLEAR_AIDING_DATA -> {
@@ -500,6 +508,7 @@ class MainActivity : AppCompatActivity(), NavigationDrawerCallbacks {
     }
 
     private fun showStatusFragment() {
+        hideOverviewFragments()
         val fm = supportFragmentManager
         // Hide everything that shouldn't be shown
         hideMapFragment()
@@ -535,6 +544,7 @@ class MainActivity : AppCompatActivity(), NavigationDrawerCallbacks {
     }
 
     private fun showMapFragment() {
+        hideOverviewFragments()
         val fm = supportFragmentManager
         // Hide everything that shouldn't be shown
         hideStatusFragment()
@@ -573,6 +583,7 @@ class MainActivity : AppCompatActivity(), NavigationDrawerCallbacks {
     }
 
     private fun showSkyFragment() {
+        hideOverviewFragments()
         val fm = supportFragmentManager
         // Hide everything that shouldn't be shown
         hideStatusFragment()
@@ -607,6 +618,7 @@ class MainActivity : AppCompatActivity(), NavigationDrawerCallbacks {
     }
 
     private fun showAccuracyFragment() {
+        hideOverviewFragments()
         val fm = supportFragmentManager
         // Hide everything that shouldn't be shown
         hideStatusFragment()
@@ -641,6 +653,33 @@ class MainActivity : AppCompatActivity(), NavigationDrawerCallbacks {
         if (accuracyFragment != null && !accuracyFragment!!.isHidden) {
             fm.beginTransaction().hide(accuracyFragment!!).commit()
         }
+    }
+
+    private fun hideOverviewFragments() {
+        val fm = supportFragmentManager
+        val transaction = fm.beginTransaction()
+        listOf(OverviewFragment.SATELLITES_TAG, OverviewFragment.DASHBOARD_TAG).forEach { tag ->
+            fm.findFragmentByTag(tag)?.let { transaction.hide(it) }
+        }
+        transaction.commit()
+    }
+
+    private fun showOverviewFragment(dashboard: Boolean) {
+        hideStatusFragment()
+        hideMapFragment()
+        hideSkyFragment()
+        hideAccuracyFragment()
+        hideOverviewFragments()
+        benchmarkController?.hide()
+        val tag = if (dashboard) OverviewFragment.DASHBOARD_TAG else OverviewFragment.SATELLITES_TAG
+        val fm = supportFragmentManager
+        val fragment = fm.findFragmentByTag(tag)
+        if (fragment == null) {
+            fm.beginTransaction().add(R.id.fragment_container, OverviewFragment.create(dashboard), tag).commit()
+        } else {
+            fm.beginTransaction().show(fragment).commit()
+        }
+        title = getString(if (dashboard) R.string.w_dashboard_title else R.string.w_satellites_title)
     }
 
     private fun forcePsdsInjection() {
@@ -778,6 +817,7 @@ class MainActivity : AppCompatActivity(), NavigationDrawerCallbacks {
             .flowWithLifecycle(lifecycle, Lifecycle.State.STARTED)
             .onEach {
                 lastLocation = it
+                motionViewModel.record(it)
                 //Log.d(TAG, "Activity location: ${it.toNotificationTitle()}")
 
                 hideProgressBar()
@@ -807,6 +847,7 @@ class MainActivity : AppCompatActivity(), NavigationDrawerCallbacks {
 
     @Synchronized
     private fun gpsStop() {
+        motionViewModel.pause()
         PreferenceUtils.saveTrackingStarted(false, prefs)
         locationFlow?.cancel()
 

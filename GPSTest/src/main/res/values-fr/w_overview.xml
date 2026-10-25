@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="w_satellites_title">Aperçu</string>
+    <string name="w_dashboard_title">Tableau de bord</string>
+    <string name="w_receiver_off">GNSS désactivé · activez l’interrupteur en haut</string>
+    <string name="w_fix_acquired">Position obtenue</string>
+    <string name="w_position_only">Position actualisée · confirmation satellite en attente</string>
+    <string name="w_waiting">En attente d’une position récente</string>
+    <string name="w_used">Utilisés</string>
+    <string name="w_visible">Visibles</string>
+    <string name="w_best_cn0">Meilleur C/N₀</string>
+    <string name="w_all">Tous</string>
+    <string name="w_satellite">Satellite</string>
+    <string name="w_used_short">Fix</string>
+    <string name="w_azimuth">Az.</string>
+    <string name="w_elevation">Él.</string>
+    <string name="w_no_satellites">En attente des signaux des satellites</string>
+    <string name="w_no_filtered_satellites">Aucun satellite de cette constellation</string>
+    <string name="w_satellite_hint">Gardez le GNSS actif près d’une fenêtre ou à l’extérieur. Les totaux incluent toutes les constellations ; les filtres concernent la liste des satellites.</string>
+    <string name="w_used_in_fix">Utilisé pour déterminer la position</string>
+    <string name="w_not_used">Non utilisé pour déterminer la position</string>
+    <string name="w_signal_note">Une ligne par satellite. La barre indique le signal le plus fort sur une échelle de 0–60 dB-Hz. Les bandes sont indiquées sous le numéro du satellite.</string>
+    <string name="w_speed">Vitesse</string>
+    <string name="w_gnss_speed">Vitesse GNSS au sol</string>
+    <string name="w_units_settings">Unités selon les paramètres</string>
+    <string name="w_average">Vitesse moyenne</string>
+    <string name="w_maximum">Vitesse maximale</string>
+    <string name="w_course">Direction du déplacement</string>
+    <string name="w_course_hint">Direction du mouvement, pas orientation du téléphone</string>
+    <string name="w_altitude_msl">Altitude · niveau de la mer</string>
+    <string name="w_altitude_wgs84">Hauteur · ellipsoïde WGS84</string>
+    <string name="w_accuracy">Précision horizontale</string>
+    <string name="w_local_clock">Heure locale de l’appareil</string>
+    <string name="w_fix_utc">Heure de la position · UTC</string>
+    <string name="w_session_note">Statistiques de vitesse de cette session. Les pauses et les mesures manquantes sont exclues.</string>
+    <string name="w_reset_stats">Réinitialiser</string>
+</resources>

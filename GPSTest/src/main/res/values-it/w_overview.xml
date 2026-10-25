@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="w_satellites_title">Panoramica</string>
+    <string name="w_dashboard_title">Cruscotto</string>
+    <string name="w_receiver_off">GNSS disattivato · usa l’interruttore in alto</string>
+    <string name="w_fix_acquired">Posizione acquisita</string>
+    <string name="w_position_only">Posizione aggiornata · in attesa di conferma satellitare</string>
+    <string name="w_waiting">In attesa di una posizione aggiornata</string>
+    <string name="w_used">Utilizzati</string>
+    <string name="w_visible">Visibili</string>
+    <string name="w_best_cn0">Miglior C/N₀</string>
+    <string name="w_all">Tutti</string>
+    <string name="w_satellite">Satellite</string>
+    <string name="w_used_short">Uso</string>
+    <string name="w_azimuth">Az.</string>
+    <string name="w_elevation">El.</string>
+    <string name="w_no_satellites">In attesa dei segnali satellitari</string>
+    <string name="w_no_filtered_satellites">Nessun satellite in questa costellazione</string>
+    <string name="w_satellite_hint">Mantieni GNSS attivo vicino a una finestra o all’aperto. I totali includono tutte le costellazioni; i filtri si applicano all’elenco dei satelliti.</string>
+    <string name="w_used_in_fix">Utilizzato per determinare la posizione</string>
+    <string name="w_not_used">Non utilizzato per determinare la posizione</string>
+    <string name="w_signal_note">Una riga per satellite. La barra mostra il segnale più forte su una scala di 0–60 dB-Hz. Le bande sono elencate sotto il numero del satellite.</string>
+    <string name="w_speed">Velocità</string>
+    <string name="w_gnss_speed">Velocità al suolo GNSS</string>
+    <string name="w_units_settings">Unità dalle impostazioni</string>
+    <string name="w_average">Velocità media</string>
+    <string name="w_maximum">Velocità massima</string>
+    <string name="w_course">Direzione di movimento</string>
+    <string name="w_course_hint">Direzione di movimento, non orientamento del telefono</string>
+    <string name="w_altitude_msl">Altitudine · livello del mare</string>
+    <string name="w_altitude_wgs84">Altezza · ellissoide WGS84</string>
+    <string name="w_accuracy">Precisione orizzontale</string>
+    <string name="w_local_clock">Ora locale del dispositivo</string>
+    <string name="w_fix_utc">Ora del rilevamento · UTC</string>
+    <string name="w_session_note">Statistiche di velocità della sessione. Le pause e le letture mancanti sono escluse.</string>
+    <string name="w_reset_stats">Azzera</string>
+</resources>

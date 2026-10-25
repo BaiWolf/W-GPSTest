@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="w_satellites_title">概要</string>
+    <string name="w_dashboard_title">ダッシュボード</string>
+    <string name="w_receiver_off">GNSS はオフです · 上部のスイッチをオンにしてください</string>
+    <string name="w_fix_acquired">測位済み</string>
+    <string name="w_position_only">位置更新済み・衛星の確認待ち</string>
+    <string name="w_waiting">新しい位置情報を待機中</string>
+    <string name="w_used">測位に使用</string>
+    <string name="w_visible">可視衛星</string>
+    <string name="w_best_cn0">最大 C/N₀</string>
+    <string name="w_all">すべて</string>
+    <string name="w_satellite">衛星</string>
+    <string name="w_used_short">測位</string>
+    <string name="w_azimuth">方位</string>
+    <string name="w_elevation">仰角</string>
+    <string name="w_no_satellites">衛星信号を待機中</string>
+    <string name="w_no_filtered_satellites">この衛星群には衛星がありません</string>
+    <string name="w_satellite_hint">窓際または屋外で GNSS をオンにしてください。合計はすべての衛星系を含み、フィルターは衛星一覧に適用されます。</string>
+    <string name="w_used_in_fix">測位に使用されています</string>
+    <string name="w_not_used">測位には使用されていません</string>
+    <string name="w_signal_note">衛星ごとに1行で表示します。バーは最も強い信号を 0–60 dB-Hz の目盛りで示します。衛星番号の下に周波数帯を表示します。</string>
+    <string name="w_speed">速度</string>
+    <string name="w_gnss_speed">GNSS 対地速度</string>
+    <string name="w_units_settings">単位は設定に従います</string>
+    <string name="w_average">平均速度</string>
+    <string name="w_maximum">最高速度</string>
+    <string name="w_course">進行方向</string>
+    <string name="w_course_hint">移動方向を示し、端末の向きとは異なります</string>
+    <string name="w_altitude_msl">標高 · 平均海面基準</string>
+    <string name="w_altitude_wgs84">高度 · WGS84 楕円体</string>
+    <string name="w_accuracy">水平測位精度</string>
+    <string name="w_local_clock">端末の現地時刻</string>
+    <string name="w_fix_utc">測位時刻 · UTC</string>
+    <string name="w_session_note">今回の実行中の速度統計です。一時停止や測定値がない時間は除外されます。</string>
+    <string name="w_reset_stats">リセット</string>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="w_satellites_title">Обзор</string>
+    <string name="w_dashboard_title">Приборная панель</string>
+    <string name="w_receiver_off">GNSS выключен · включите переключатель вверху</string>
+    <string name="w_fix_acquired">Положение определено</string>
+    <string name="w_position_only">Позиция обновлена · ожидание подтверждения спутников</string>
+    <string name="w_waiting">Ожидание актуального положения</string>
+    <string name="w_used">Используются</string>
+    <string name="w_visible">Видимые</string>
+    <string name="w_best_cn0">Лучший C/N₀</string>
+    <string name="w_all">Все</string>
+    <string name="w_satellite">Спутник</string>
+    <string name="w_used_short">Фикс.</string>
+    <string name="w_azimuth">Аз.</string>
+    <string name="w_elevation">Угол</string>
+    <string name="w_no_satellites">Ожидание сигналов спутников</string>
+    <string name="w_no_filtered_satellites">Нет спутников этой системы</string>
+    <string name="w_satellite_hint">Оставьте GNSS включённым у окна или на улице. Итоги включают все системы; фильтры применяются к списку спутников.</string>
+    <string name="w_used_in_fix">Используется для определения положения</string>
+    <string name="w_not_used">Не используется для определения положения</string>
+    <string name="w_signal_note">Одна строка на спутник. Полоса показывает самый сильный сигнал по шкале 0–60 dB-Hz. Диапазоны частот указаны под номером спутника.</string>
+    <string name="w_speed">Скорость</string>
+    <string name="w_gnss_speed">Путевая скорость GNSS</string>
+    <string name="w_units_settings">Единицы из настроек</string>
+    <string name="w_average">Средняя скорость</string>
+    <string name="w_maximum">Максимальная скорость</string>
+    <string name="w_course">Направление движения</string>
+    <string name="w_course_hint">Направление движения, а не ориентация телефона</string>
+    <string name="w_altitude_msl">Высота · уровень моря</string>
+    <string name="w_altitude_wgs84">Высота · эллипсоид WGS84</string>
+    <string name="w_accuracy">Точность по горизонтали</string>
+    <string name="w_local_clock">Местное время устройства</string>
+    <string name="w_fix_utc">Время определения положения · UTC</string>
+    <string name="w_session_note">Статистика скорости за этот сеанс. Паузы и пропущенные измерения не учитываются.</string>
+    <string name="w_reset_stats">Сбросить</string>
+</resources>

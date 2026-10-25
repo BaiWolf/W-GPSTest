@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="w_satellites_title">نمای کلی</string>
+    <string name="w_dashboard_title">داشبورد</string>
+    <string name="w_receiver_off">GNSS خاموش است · کلید بالای صفحه را روشن کنید</string>
+    <string name="w_fix_acquired">موقعیت تعیین شد</string>
+    <string name="w_position_only">موقعیت به‌روز شد · در انتظار تأیید ماهواره‌ها</string>
+    <string name="w_waiting">در انتظار موقعیت تازه</string>
+    <string name="w_used">استفاده‌شده</string>
+    <string name="w_visible">قابل مشاهده</string>
+    <string name="w_best_cn0">بهترین C/N₀</string>
+    <string name="w_all">همه</string>
+    <string name="w_satellite">ماهواره</string>
+    <string name="w_used_short">تثبیت</string>
+    <string name="w_azimuth">سمت</string>
+    <string name="w_elevation">ارتفاع</string>
+    <string name="w_no_satellites">در انتظار سیگنال ماهواره‌ها</string>
+    <string name="w_no_filtered_satellites">ماهواره‌ای در این منظومه نیست</string>
+    <string name="w_satellite_hint">GNSS را نزدیک پنجره یا در فضای باز روشن نگه دارید. مجموع شامل همه منظومه‌هاست؛ فیلترها فقط بر فهرست ماهواره‌ها اعمال می‌شوند.</string>
+    <string name="w_used_in_fix">برای تعیین موقعیت استفاده می‌شود</string>
+    <string name="w_not_used">برای تعیین موقعیت استفاده نمی‌شود</string>
+    <string name="w_signal_note">هر ردیف یک ماهواره است. نوار، قوی‌ترین سیگنال را در مقیاس 0–60 dB-Hz نشان می‌دهد. باندها زیر شماره ماهواره آمده‌اند.</string>
+    <string name="w_speed">سرعت</string>
+    <string name="w_gnss_speed">سرعت زمینی GNSS</string>
+    <string name="w_units_settings">واحدها مطابق تنظیمات</string>
+    <string name="w_average">سرعت میانگین</string>
+    <string name="w_maximum">بیشترین سرعت</string>
+    <string name="w_course">جهت حرکت</string>
+    <string name="w_course_hint">جهت حرکت، نه جهت قرارگیری تلفن</string>
+    <string name="w_altitude_msl">ارتفاع · سطح دریا</string>
+    <string name="w_altitude_wgs84">ارتفاع · بیضوی WGS84</string>
+    <string name="w_accuracy">دقت افقی</string>
+    <string name="w_local_clock">زمان محلی دستگاه</string>
+    <string name="w_fix_utc">زمان تعیین موقعیت · UTC</string>
+    <string name="w_session_note">آمار سرعت این نشست است. توقف‌ها و زمان‌های بدون اندازه‌گیری محاسبه نمی‌شوند.</string>
+    <string name="w_reset_stats">بازنشانی</string>
+</resources>

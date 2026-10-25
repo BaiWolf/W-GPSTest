@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="w_satellites_title">Yleiskuva</string>
+    <string name="w_dashboard_title">Mittaristo</string>
+    <string name="w_receiver_off">GNSS on pois päältä · käytä yläreunan kytkintä</string>
+    <string name="w_fix_acquired">Sijainti määritetty</string>
+    <string name="w_position_only">Sijainti päivitetty · odotetaan satelliittivahvistusta</string>
+    <string name="w_waiting">Odotetaan tuoretta sijaintia</string>
+    <string name="w_used">Käytössä</string>
+    <string name="w_visible">Näkyvissä</string>
+    <string name="w_best_cn0">Paras C/N₀</string>
+    <string name="w_all">Kaikki</string>
+    <string name="w_satellite">Satelliitti</string>
+    <string name="w_used_short">Käyt.</string>
+    <string name="w_azimuth">Ats.</string>
+    <string name="w_elevation">Kor.</string>
+    <string name="w_no_satellites">Odotetaan satelliittisignaaleja</string>
+    <string name="w_no_filtered_satellites">Tässä järjestelmässä ei ole satelliitteja</string>
+    <string name="w_satellite_hint">Pidä GNSS päällä ikkunan lähellä tai ulkona. Kokonaismäärät sisältävät kaikki järjestelmät; suodattimet koskevat satelliittiluetteloa.</string>
+    <string name="w_used_in_fix">Käytetään sijainnin määritykseen</string>
+    <string name="w_not_used">Ei käytetä sijainnin määritykseen</string>
+    <string name="w_signal_note">Yksi rivi satelliittia kohti. Palkki näyttää voimakkaimman signaalin asteikolla 0–60 dB-Hz. Taajuuskaistat näkyvät satelliitin numeron alla.</string>
+    <string name="w_speed">Nopeus</string>
+    <string name="w_gnss_speed">GNSS-nopeus maan suhteen</string>
+    <string name="w_units_settings">Yksiköt asetusten mukaan</string>
+    <string name="w_average">Keskinopeus</string>
+    <string name="w_maximum">Suurin nopeus</string>
+    <string name="w_course">Kulkusuunta</string>
+    <string name="w_course_hint">Liikkeen suunta, ei puhelimen asento</string>
+    <string name="w_altitude_msl">Korkeus · merenpinta</string>
+    <string name="w_altitude_wgs84">Korkeus · WGS84-ellipsoidi</string>
+    <string name="w_accuracy">Vaakasuuntainen tarkkuus</string>
+    <string name="w_local_clock">Laitteen paikallinen aika</string>
+    <string name="w_fix_utc">Sijainnin aikaleima · UTC</string>
+    <string name="w_session_note">Tämän istunnon nopeustilastot. Taukoja ja puuttuvia mittauksia ei lasketa mukaan.</string>
+    <string name="w_reset_stats">Nollaa</string>
+</resources>

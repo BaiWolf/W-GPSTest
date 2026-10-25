@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="w_satellites_title">Огляд</string>
+    <string name="w_dashboard_title">Панель приладів</string>
+    <string name="w_receiver_off">GNSS вимкнено · увімкніть перемикач угорі</string>
+    <string name="w_fix_acquired">Положення визначено</string>
+    <string name="w_position_only">Позицію оновлено · очікування підтвердження супутників</string>
+    <string name="w_waiting">Очікування актуального положення</string>
+    <string name="w_used">Використано</string>
+    <string name="w_visible">Видимі</string>
+    <string name="w_best_cn0">Найкраще C/N₀</string>
+    <string name="w_all">Усі</string>
+    <string name="w_satellite">Супутник</string>
+    <string name="w_used_short">Фікс.</string>
+    <string name="w_azimuth">Аз.</string>
+    <string name="w_elevation">Кут</string>
+    <string name="w_no_satellites">Очікування сигналів супутників</string>
+    <string name="w_no_filtered_satellites">Немає супутників цієї системи</string>
+    <string name="w_satellite_hint">Залиште GNSS увімкненим біля вікна або надворі. Підсумки включають усі системи; фільтри застосовуються до списку супутників.</string>
+    <string name="w_used_in_fix">Використовується для визначення положення</string>
+    <string name="w_not_used">Не використовується для визначення положення</string>
+    <string name="w_signal_note">Один рядок на супутник. Смуга показує найсильніший сигнал за шкалою 0–60 dB-Hz. Діапазони частот наведено під номером супутника.</string>
+    <string name="w_speed">Швидкість</string>
+    <string name="w_gnss_speed">Шляхова швидкість GNSS</string>
+    <string name="w_units_settings">Одиниці з налаштувань</string>
+    <string name="w_average">Середня швидкість</string>
+    <string name="w_maximum">Максимальна швидкість</string>
+    <string name="w_course">Напрямок руху</string>
+    <string name="w_course_hint">Напрямок руху, а не орієнтація телефона</string>
+    <string name="w_altitude_msl">Висота · рівень моря</string>
+    <string name="w_altitude_wgs84">Висота · еліпсоїд WGS84</string>
+    <string name="w_accuracy">Точність по горизонталі</string>
+    <string name="w_local_clock">Місцевий час пристрою</string>
+    <string name="w_fix_utc">Час визначення положення · UTC</string>
+    <string name="w_session_note">Статистика швидкості цього сеансу. Паузи й пропущені вимірювання не враховуються.</string>
+    <string name="w_reset_stats">Скинути</string>
+</resources>

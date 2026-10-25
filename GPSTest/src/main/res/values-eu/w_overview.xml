@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="w_satellites_title">Ikuspegi orokorra</string>
+    <string name="w_dashboard_title">Tresna-panela</string>
+    <string name="w_receiver_off">GNSS itzalita dago · piztu goiko etengailua</string>
+    <string name="w_fix_acquired">Kokapena zehaztuta</string>
+    <string name="w_position_only">Kokapena eguneratuta · sateliteen berrespenaren zain</string>
+    <string name="w_waiting">Uneko kokapenaren zain</string>
+    <string name="w_used">Erabiliak</string>
+    <string name="w_visible">Ikusgai</string>
+    <string name="w_best_cn0">C/N₀ onena</string>
+    <string name="w_all">Guztiak</string>
+    <string name="w_satellite">Satelitea</string>
+    <string name="w_used_short">Erab.</string>
+    <string name="w_azimuth">Az.</string>
+    <string name="w_elevation">El.</string>
+    <string name="w_no_satellites">Sateliteen seinaleen zain</string>
+    <string name="w_no_filtered_satellites">Ez dago sateliterik konstelazio honetan</string>
+    <string name="w_satellite_hint">Mantendu GNSS aktibatuta leiho baten ondoan edo kanpoan. Guztizkoek konstelazio guztiak hartzen dituzte; iragazkiak sateliteen zerrendari aplikatzen zaizkio.</string>
+    <string name="w_used_in_fix">Kokapena zehazteko erabilia</string>
+    <string name="w_not_used">Ez da kokapena zehazteko erabiltzen</string>
+    <string name="w_signal_note">Errenkada bat satelite bakoitzeko. Barrak seinalerik indartsuena erakusten du 0–60 dB-Hz eskalan. Bandak satelitearen zenbakiaren azpian agertzen dira.</string>
+    <string name="w_speed">Abiadura</string>
+    <string name="w_gnss_speed">GNSS abiadura lurrarekiko</string>
+    <string name="w_units_settings">Unitateak ezarpenen arabera</string>
+    <string name="w_average">Batez besteko abiadura</string>
+    <string name="w_maximum">Gehieneko abiadura</string>
+    <string name="w_course">Mugimenduaren norabidea</string>
+    <string name="w_course_hint">Mugimenduaren norabidea, ez telefonoaren orientazioa</string>
+    <string name="w_altitude_msl">Altitudea · itsas maila</string>
+    <string name="w_altitude_wgs84">Altuera · WGS84 elipsoidea</string>
+    <string name="w_accuracy">Zehaztasun horizontala</string>
+    <string name="w_local_clock">Gailuaren tokiko ordua</string>
+    <string name="w_fix_utc">Kokapenaren ordua · UTC</string>
+    <string name="w_session_note">Saio honetako abiadura-estatistikak. Etenaldiak eta falta diren neurketak ez dira kontuan hartzen.</string>
+    <string name="w_reset_stats">Berrezarri</string>
+</resources>

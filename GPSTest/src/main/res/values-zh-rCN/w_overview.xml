@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="w_satellites_title">概览</string>
+    <string name="w_dashboard_title">仪表盘</string>
+    <string name="w_receiver_off">GNSS 已关闭 · 请打开顶部开关</string>
+    <string name="w_fix_acquired">已获取定位</string>
+    <string name="w_position_only">位置已更新，等待卫星确认</string>
+    <string name="w_waiting">等待有效定位</string>
+    <string name="w_used">参与定位</string>
+    <string name="w_visible">可见卫星</string>
+    <string name="w_best_cn0">最强 C/N₀</string>
+    <string name="w_all">全部</string>
+    <string name="w_satellite">卫星</string>
+    <string name="w_used_short">定位</string>
+    <string name="w_azimuth">方位</string>
+    <string name="w_elevation">仰角</string>
+    <string name="w_no_satellites">等待卫星信号</string>
+    <string name="w_no_filtered_satellites">此星座暂无卫星</string>
+    <string name="w_satellite_hint">请保持 GNSS 开启，并移至窗边或室外。总数包含所有星座，筛选设置仅影响下方卫星列表。</string>
+    <string name="w_used_in_fix">参与定位计算</string>
+    <string name="w_not_used">未参与定位计算</string>
+    <string name="w_signal_note">每颗卫星显示一行，信号条表示最强信号，刻度为 0–60 dB-Hz；编号下方列出信号频段。</string>
+    <string name="w_speed">速度</string>
+    <string name="w_gnss_speed">GNSS 对地速度</string>
+    <string name="w_units_settings">单位跟随设置</string>
+    <string name="w_average">平均速度</string>
+    <string name="w_maximum">最高速度</string>
+    <string name="w_course">行进方向</string>
+    <string name="w_course_hint">移动方向，与手机朝向无关</string>
+    <string name="w_altitude_msl">海拔 · 平均海平面</string>
+    <string name="w_altitude_wgs84">高度 · WGS84 椭球</string>
+    <string name="w_accuracy">水平定位精度</string>
+    <string name="w_local_clock">手机本地时间</string>
+    <string name="w_fix_utc">定位时间 · UTC</string>
+    <string name="w_session_note">统计本次运行的速度；暂停和无读数时段不计入平均值。</string>
+    <string name="w_reset_stats">重置统计</string>
+</resources>

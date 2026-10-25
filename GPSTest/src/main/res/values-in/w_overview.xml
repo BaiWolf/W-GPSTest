@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="w_satellites_title">Ringkasan</string>
+    <string name="w_dashboard_title">Dasbor</string>
+    <string name="w_receiver_off">GNSS nonaktif · aktifkan sakelar di atas</string>
+    <string name="w_fix_acquired">Posisi diperoleh</string>
+    <string name="w_position_only">Posisi diperbarui · menunggu konfirmasi satelit</string>
+    <string name="w_waiting">Menunggu posisi terbaru</string>
+    <string name="w_used">Digunakan</string>
+    <string name="w_visible">Terlihat</string>
+    <string name="w_best_cn0">C/N₀ terbaik</string>
+    <string name="w_all">Semua</string>
+    <string name="w_satellite">Satelit</string>
+    <string name="w_used_short">Pakai</string>
+    <string name="w_azimuth">Az.</string>
+    <string name="w_elevation">El.</string>
+    <string name="w_no_satellites">Menunggu sinyal satelit</string>
+    <string name="w_no_filtered_satellites">Tidak ada satelit dalam konstelasi ini</string>
+    <string name="w_satellite_hint">Tetap aktifkan GNSS di dekat jendela atau di luar ruangan. Total mencakup semua konstelasi; filter berlaku untuk daftar satelit.</string>
+    <string name="w_used_in_fix">Digunakan untuk menentukan posisi</string>
+    <string name="w_not_used">Tidak digunakan untuk menentukan posisi</string>
+    <string name="w_signal_note">Satu baris per satelit. Batang menampilkan sinyal terkuat pada skala 0–60 dB-Hz. Pita frekuensi tercantum di bawah nomor satelit.</string>
+    <string name="w_speed">Kecepatan</string>
+    <string name="w_gnss_speed">Kecepatan GNSS terhadap tanah</string>
+    <string name="w_units_settings">Satuan mengikuti setelan</string>
+    <string name="w_average">Kecepatan rata-rata</string>
+    <string name="w_maximum">Kecepatan maksimum</string>
+    <string name="w_course">Arah pergerakan</string>
+    <string name="w_course_hint">Arah gerakan, bukan orientasi ponsel</string>
+    <string name="w_altitude_msl">Ketinggian · muka laut</string>
+    <string name="w_altitude_wgs84">Tinggi · elipsoid WGS84</string>
+    <string name="w_accuracy">Akurasi horizontal</string>
+    <string name="w_local_clock">Waktu lokal perangkat</string>
+    <string name="w_fix_utc">Waktu penentuan posisi · UTC</string>
+    <string name="w_session_note">Statistik kecepatan untuk sesi ini. Jeda dan pembacaan yang tidak tersedia tidak dihitung.</string>
+    <string name="w_reset_stats">Reset</string>
+</resources>

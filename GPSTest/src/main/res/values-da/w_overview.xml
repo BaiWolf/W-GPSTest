@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="w_satellites_title">Oversigt</string>
+    <string name="w_dashboard_title">Instrumentbræt</string>
+    <string name="w_receiver_off">GNSS er slået fra · brug kontakten øverst</string>
+    <string name="w_fix_acquired">Position fundet</string>
+    <string name="w_position_only">Position opdateret · afventer satellitbekræftelse</string>
+    <string name="w_waiting">Venter på en ny position</string>
+    <string name="w_used">I brug</string>
+    <string name="w_visible">Synlige</string>
+    <string name="w_best_cn0">Bedste C/N₀</string>
+    <string name="w_all">Alle</string>
+    <string name="w_satellite">Satellit</string>
+    <string name="w_used_short">Fix</string>
+    <string name="w_azimuth">Az.</string>
+    <string name="w_elevation">El.</string>
+    <string name="w_no_satellites">Venter på satellitsignaler</string>
+    <string name="w_no_filtered_satellites">Ingen satellitter i denne konstellation</string>
+    <string name="w_satellite_hint">Hold GNSS tændt nær et vindue eller udendørs. Totalerne omfatter alle konstellationer; filtre gælder satellitlisten.</string>
+    <string name="w_used_in_fix">Bruges til positionsbestemmelse</string>
+    <string name="w_not_used">Bruges ikke til positionsbestemmelse</string>
+    <string name="w_signal_note">Én række pr. satellit. Bjælken viser det stærkeste signal på en skala fra 0–60 dB-Hz. Frekvensbåndene vises under satellitnummeret.</string>
+    <string name="w_speed">Hastighed</string>
+    <string name="w_gnss_speed">GNSS-hastighed over jorden</string>
+    <string name="w_units_settings">Enheder følger indstillinger</string>
+    <string name="w_average">Gennemsnitshastighed</string>
+    <string name="w_maximum">Maksimal hastighed</string>
+    <string name="w_course">Bevægelsesretning</string>
+    <string name="w_course_hint">Bevægelsesretning, ikke telefonens orientering</string>
+    <string name="w_altitude_msl">Højde · havniveau</string>
+    <string name="w_altitude_wgs84">Højde · WGS84-ellipsoide</string>
+    <string name="w_accuracy">Vandret nøjagtighed</string>
+    <string name="w_local_clock">Enhedens lokale tid</string>
+    <string name="w_fix_utc">Tid for positionsbestemmelse · UTC</string>
+    <string name="w_session_note">Hastighedsstatistik for denne session. Pauser og manglende målinger medregnes ikke.</string>
+    <string name="w_reset_stats">Nulstil</string>
+</resources>

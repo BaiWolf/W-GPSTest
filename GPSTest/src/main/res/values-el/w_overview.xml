@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="w_satellites_title">Επισκόπηση</string>
+    <string name="w_dashboard_title">Πίνακας οργάνων</string>
+    <string name="w_receiver_off">Το GNSS είναι κλειστό · ανοίξτε τον επάνω διακόπτη</string>
+    <string name="w_fix_acquired">Η θέση προσδιορίστηκε</string>
+    <string name="w_position_only">Η θέση ενημερώθηκε · αναμονή επιβεβαίωσης δορυφόρων</string>
+    <string name="w_waiting">Αναμονή για πρόσφατη θέση</string>
+    <string name="w_used">Σε χρήση</string>
+    <string name="w_visible">Ορατοί</string>
+    <string name="w_best_cn0">Μέγιστο C/N₀</string>
+    <string name="w_all">Όλοι</string>
+    <string name="w_satellite">Δορυφόρος</string>
+    <string name="w_used_short">Χρήση</string>
+    <string name="w_azimuth">Αζ.</string>
+    <string name="w_elevation">Αν.</string>
+    <string name="w_no_satellites">Αναμονή για δορυφορικά σήματα</string>
+    <string name="w_no_filtered_satellites">Δεν υπάρχουν δορυφόροι σε αυτόν τον αστερισμό</string>
+    <string name="w_satellite_hint">Κρατήστε το GNSS ενεργό κοντά σε παράθυρο ή σε εξωτερικό χώρο. Τα σύνολα περιλαμβάνουν όλους τους αστερισμούς· τα φίλτρα ισχύουν για τη λίστα δορυφόρων.</string>
+    <string name="w_used_in_fix">Χρησιμοποιείται για τον προσδιορισμό θέσης</string>
+    <string name="w_not_used">Δεν χρησιμοποιείται για τον προσδιορισμό θέσης</string>
+    <string name="w_signal_note">Μία γραμμή ανά δορυφόρο. Η μπάρα δείχνει το ισχυρότερο σήμα σε κλίμακα 0–60 dB-Hz. Οι ζώνες συχνοτήτων αναγράφονται κάτω από τον αριθμό του δορυφόρου.</string>
+    <string name="w_speed">Ταχύτητα</string>
+    <string name="w_gnss_speed">Ταχύτητα εδάφους GNSS</string>
+    <string name="w_units_settings">Μονάδες από τις ρυθμίσεις</string>
+    <string name="w_average">Μέση ταχύτητα</string>
+    <string name="w_maximum">Μέγιστη ταχύτητα</string>
+    <string name="w_course">Πορεία</string>
+    <string name="w_course_hint">Κατεύθυνση κίνησης, όχι προσανατολισμός τηλεφώνου</string>
+    <string name="w_altitude_msl">Υψόμετρο · στάθμη θάλασσας</string>
+    <string name="w_altitude_wgs84">Ύψος · ελλειψοειδές WGS84</string>
+    <string name="w_accuracy">Οριζόντια ακρίβεια</string>
+    <string name="w_local_clock">Τοπική ώρα συσκευής</string>
+    <string name="w_fix_utc">Χρόνος προσδιορισμού θέσης · UTC</string>
+    <string name="w_session_note">Στατιστικά ταχύτητας αυτής της περιόδου. Οι παύσεις και οι μετρήσεις που λείπουν δεν συνυπολογίζονται.</string>
+    <string name="w_reset_stats">Μηδενισμός</string>
+</resources>
