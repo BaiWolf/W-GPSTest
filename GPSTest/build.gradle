@@ -4,6 +4,16 @@ apply plugin: 'kotlin-kapt'
 apply plugin: 'dagger.hilt.android.plugin'
 apply plugin: 'org.jetbrains.kotlin.plugin.compose'
 
+// Keep each distributor's Maps key outside version control.
+def mapsProperties = new Properties()
+def mapsPropertiesFile = rootProject.file('secrets.properties')
+if (mapsPropertiesFile.isFile()) {
+    mapsPropertiesFile.withInputStream { mapsProperties.load(it) }
+}
+def mapsApiKey = providers.gradleProperty('MAPS_API_KEY')
+        .orElse(mapsProperties.getProperty('MAPS_API_KEY', ''))
+        .get()
+
 android {
     compileSdkVersion 36
 
@@ -12,8 +22,8 @@ android {
         targetSdkVersion 36
         multiDexEnabled true
         // versionCode scheme - first two digits are minSdkVersion, last three digits are build number
-        versionCode 24102
-        versionName "3.10.6-w.2"
+        versionCode 24103
+        versionName "3.10.6-w.3"
 
         vectorDrawables.useSupportLibrary = true
 
@@ -32,6 +42,7 @@ android {
             // Google Play release using Google Play Services for maps
             dimension "map"
             applicationId "com.baiwolf.wgpstest"
+            manifestPlaceholders = [MAPS_API_KEY: mapsApiKey]
         }
 
         osmdroid {

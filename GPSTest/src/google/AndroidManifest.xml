@@ -26,7 +26,7 @@
     <application>
         <!-- For Google Maps API v2 - Enable manifest merging -->
         <meta-data
-            android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyDQ74tuldesS1VnK84CgeSq0v6FVe5Od-M"/>
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${MAPS_API_KEY}"/>
     </application>
 </manifest>

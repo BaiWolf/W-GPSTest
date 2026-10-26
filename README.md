@@ -19,13 +19,15 @@ The previous AGP 8.13.2 / Gradle 8.14.5 baseline is preserved in commit `3a70020
 
 The `3.10.6-w.2` Google Release APK and AAB were built and their signatures verified. The APK was checked for alignment and non-debuggable status, installed on a Pixel 11, and verified on-device. Dashboard speed and course headings now align; the course hint, GitHub drawer entry, and feedback drawer entry were removed. Help content stays in English, and About uses an inset-aware toolbar above scrolling content so its first lines remain visible.
 
+The `3.10.6-w.3` Google Release AAB (version code `24103`) uses distributor-specific Maps configuration instead of the upstream API key. The signed bundle and embedded Maps key were verified, and Google Play updates and map loading passed manual testing on both Xiaomi and Pixel phones. For APK distribution outside Google Play, obtain a Play-signed APK without the automatic protection installer check; a protected universal APK can require users to reinstall from Google Play.
+
 Open the project in Android Studio and select the Google Debug variant. From a configured command line:
 
 ```shell
 ./gradlew :GPSTest:assembleGoogleDebug :GPSTest:testGoogleDebugUnitTest
 ```
 
-The upstream map-provider setup and any API-key configuration still apply. For a custom Google Maps API key, authorize the W-GPSTest application ID and signing certificate.
+Google Maps builds read `MAPS_API_KEY` from the root `secrets.properties` file (ignored by Git), or from the Gradle property of the same name. Copy `secrets.properties.example` to `secrets.properties` and enter your own key. Without a key, the app builds but Google Maps cannot load. Enable Maps SDK for Android and billing for your Google Cloud project, restrict the key to that SDK, and authorize `com.baiwolf.wgpstest` with the SHA-1 fingerprints of every applicable Google Play app signing certificate. For locally installed builds, also authorize their local signing certificate; the upload certificate alone does not authorize Play-installed builds.
 
 Release builds read local signing settings from `.signing/release.properties` by default, or from the file specified by `-Psecure.properties=<path>`. The properties are `key.store` (relative to `GPSTest/`, or an absolute path), `key.alias`, `key.storepassword`, and `key.keypassword`. Keep the keystore and passwords backed up outside this checkout; `.signing/` is ignored by Git. Build the signed Google Maps APK with `./gradlew :GPSTest:assembleGoogleRelease`, or its Android App Bundle with `./gradlew :GPSTest:bundleGoogleRelease`. Use the same signing key for subsequent APK updates.
 

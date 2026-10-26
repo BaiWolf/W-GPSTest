@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="w_whats_new"><b>W-GPSTest</b>\n\n
+        • Maps: updated Google Maps API configuration for W-GPSTest releases.\n\n
         • Overview: per-satellite signal strength, frequency bands, fix participation, and constellation filters with used/in-view counts.\n\n
         • Dashboard: ground speed, session average and maximum speed, course, altitude, accuracy, time, and coordinates. Units follow Settings; session speed statistics can be reset.\n\n
         • Interface: aligned the speed and course headings on the Dashboard. Removed the direction hint below the course reading and the GitHub and feedback drawer entries.\n\n
