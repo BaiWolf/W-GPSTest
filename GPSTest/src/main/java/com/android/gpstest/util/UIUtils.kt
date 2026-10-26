@@ -19,6 +19,7 @@ import android.app.Activity
 import android.app.Dialog
 import android.content.DialogInterface
 import android.content.Intent
+import android.content.ActivityNotFoundException
 import android.location.Location
 import android.net.Uri
 import android.os.Bundle
@@ -198,7 +199,8 @@ internal object UIUtils {
     fun createHelpDialog(activity: Activity): Dialog {
         val builder = AlertDialog.Builder(activity)
         builder.setTitle(R.string.title_help)
-        val options = R.array.main_help_options
+        val options = activity.resources.getStringArray(R.array.main_help_options) +
+                activity.getString(R.string.w_privacy_policy_title)
         builder.setItems(
             options
         ) { dialog: DialogInterface?, which: Int ->
@@ -207,9 +209,31 @@ internal object UIUtils {
                     LibUIUtils.WHATSNEW_DIALOG
                 )
                 1 -> activity.startActivity(Intent(activity, HelpActivity::class.java))
+                2 -> openPrivacyPolicy(activity)
             }
         }
         return builder.create()
+    }
+
+    @JvmStatic
+    fun openPrivacyPolicy(activity: Activity) {
+        val url = activity.getString(R.string.w_privacy_policy_url)
+        try {
+            activity.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url)))
+        } catch (e: ActivityNotFoundException) {
+            val addressView = TextView(activity).apply {
+                text = url
+                setTextIsSelectable(true)
+                val padding = (24 * resources.displayMetrics.density).toInt()
+                setPadding(padding, padding, padding, padding)
+            }
+            AlertDialog.Builder(activity)
+                .setTitle(R.string.w_privacy_policy_title)
+                .setMessage(R.string.w_privacy_no_browser)
+                .setView(addressView)
+                .setPositiveButton(android.R.string.ok, null)
+                .show()
+        }
     }
 
     fun createWhatsNewDialog(activity: Activity): Dialog {

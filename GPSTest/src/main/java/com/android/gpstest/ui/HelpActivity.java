@@ -32,6 +32,7 @@ import com.android.gpstest.Application;
 import com.android.gpstest.BuildConfig;
 import com.android.gpstest.R;
 import com.android.gpstest.library.util.IOUtils;
+import com.android.gpstest.util.UIUtils;
 
 public class HelpActivity extends AppCompatActivity {
 
@@ -65,6 +66,7 @@ public class HelpActivity extends AppCompatActivity {
 
         TextView versionView = (TextView) findViewById(R.id.app_version);
         TextView helpView = (TextView) findViewById(R.id.help_text);
+        findViewById(R.id.privacy_policy).setOnClickListener(view -> UIUtils.openPrivacyPolicy(this));
 
         String versionString = "";
         int versionCode = 0;

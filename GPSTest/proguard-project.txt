@@ -19,17 +19,21 @@
 #   public *;
 #}
 
-# Don't rename class names - this makes stack traces must easier to read/troubleshoot
--dontobfuscate
+# Keep source positions for retracing optimized release crashes with mapping.txt.
+-keepattributes SourceFile,LineNumberTable
 
-# Keep all GPSTest Android classes
--keep class com.android.gpstest.** { *; }
+# Android components, XML views, Fragment constructors and Hilt entry points are
+# covered by AGP-generated rules and dependency consumer rules. Do not keep the
+# entire application package or disable obfuscation globally.
 
 # for SlidingUpPanelLayout and compiling with API 28 (see https://github.com/barbeau/gpstest/issues/273)
 -dontwarn com.sothree.**
 -keep class com.sothree.**
 -keep interface com.sothree.**
 
-# for Jackon and outputting AntennaInfo
+# Jackson reflects over platform GnssAntennaInfo objects. Preserve Jackson's
+# own names as before, but still allow dead-code removal and optimization.
+# Framework model classes are supplied by Android and are not renamed by R8.
+-keep,allowshrinking,allowoptimization class com.fasterxml.jackson.** { *; }
 -dontwarn java.beans.ConstructorProperties
 -dontwarn java.beans.Transient
